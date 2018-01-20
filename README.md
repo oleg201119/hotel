@@ -1,0 +1,2 @@
+# hotel
+responsive web page
