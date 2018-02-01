@@ -1,0 +1,238 @@
+
+////////////////
+// Card Style //
+////////////////
+.card {
+  box-shadow: $box_shadow;
+  border: none;
+  overflow: hidden;
+  // Card Image
+  .card-image {
+    display: flex;
+    justify-content: center;
+    height: 295px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  } // End Card Image
+  // Card Title
+  .card-title {
+    font-family: $font_title;
+    color: $color_black;
+    font-size: 20px;
+    margin-bottom: unset;
+    cursor: pointer;
+    &:before {
+      content: '';
+      width: 5px;
+      height: 20px;
+      background-color: $color_red;
+      display: inline-block;
+      position: relative;
+      top: 2.5px;
+      margin-right: 10px;
+    }
+    &:hover {
+      color: $color_red;
+    }
+  } // End Card Title
+  // Location
+  .location {
+    display: flex;
+    align-items: center;
+    color: $color_red;
+    // Map Marker
+    &:before {
+      content: '\f041';
+      font-family: $font_awesome;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  // Rating and Review
+  .rating-review {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    .rating {
+      display: inline-block;
+      margin-right: 5px;
+      .fa-star {
+        color: $color_red;
+      }
+      &:after {
+        content: '';
+        width: 1px;
+        height: 12px;
+        background-color: #575757;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        margin-left: 5px;
+      }
+    }
+    .review {
+      display: inline-block;
+      color: $color_black;
+    }
+  } // End Rating and Review
+  // Card body
+  .card-body {
+    padding: 30px 20px 20px;
+  }
+  // Card footer
+  .card-footer {
+    background-color: $color_white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    .btn {
+      margin-left: auto;
+      width: 115px;
+    }
+  }
+  // Card Text
+  .card-text {
+    margin-bottom: 30px;
+  }
+}
+///////////////////////////////
+// Featured Destination Card //
+///////////////////////////////
+.featured-destination-card {
+  // When Hover
+  &:hover {
+    .card-title {
+      background-color: $color_red;
+      color: $color_white;
+      &:before {
+        background-color: $color_white;
+      }
+    }
+  } // End Hover
+  .card-image {
+    height: 315px;
+  }
+  // Card Title
+  .card-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      width: 20px;
+      height: 5px;
+      background-color: $color_red;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 10px);
+    }
+  } // End Card Title
+  // Promo Price
+  .promo-price {
+    background-color: $color_red;
+    color: $color_white;
+    font-family: $font_bold;
+    font-size: $size_font_small;
+    padding: 10px 50px;
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    transform: rotate(-40deg);
+  }
+}
+///////////////////////
+// Tour Package Card //
+///////////////////////
+.tour-package-card {
+  // Weather
+  .weather {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    .weather-icon {
+      display: inline-block;
+      vertical-align: middle;
+      img {
+        width: 30px;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+      &:after {
+        content: '';
+        background-color: $color_white;
+        width: 1px;
+        height: 22px;
+        opacity: .5;
+        display: inline-block;
+        margin: 0 5px;
+      }
+    }
+    .temperature {
+      color: $color_white;
+      font-size: 18px;
+      opacity: .5;
+      display: inline-block;
+    }
+  } // End Weather
+  // Price
+  .price {
+    font-family: $font_title;
+    font-size: 24px;
+    color: $color_blue;
+    float: right;
+    position: relative;
+    top: -5px;
+  }
+  // offer
+  .offer {
+    color: $color_black;
+  }
+} // End Tour Package Card
+
+////////////////////////
+// Hotel Package Card //
+////////////////////////
+.hotel-package-card {
+  // Price
+  .price {
+    position: absolute;
+    top: 35px; right: 0;
+    display: flex;
+    &:before {
+      content: '';
+      border-right: solid 17px $color_red;
+      border-bottom: solid 17px transparent;
+      border-top: solid 17px transparent;
+    }
+    &:after {
+      content: '●';
+      color: $color_white;
+      position: absolute;
+      top: 4px;
+      left: 12px;
+    }
+    span {
+      background: $color_red;
+      padding: 7px 15px;
+      margin: auto;
+      color: $color_white;
+      font-family: $font_bold;
+      font-size: 14px;
+    }
+  } // End Price
+  .booking-date {
+    color: $color_black;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    // Font Awesome Calendar Icon
+    &:before {
+      content: '\f133';
+      font-family: $font_awesome;
+      color: $color_red;
+      margin-right: 10px;
+    }
+  }
+}

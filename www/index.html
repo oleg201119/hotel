@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hotel and Tour</title>
+  <!-- CSS file links -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Begin Page Header -->
+  <div class="page-header">
+    <!-- Begin Header Top -->
+    <nav class="navbar navbar-expand-lg header-top">
+      <div class="container">
+        <!-- NavBar Toggler Button -->
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarHeaderTop">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!-- Begin Header Top Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarHeaderTop">
+          <!-- Begin Left Side of Navbar -->
+          <ul class="navbar-nav mr-auto">
+            <!-- Currency -->
+            <li class="nav-item dropdown currency">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">usd</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">usd</a>
+                <a class="dropdown-item" href="#">euro</a>
+              </div>
+            </li>
+            <!-- Language -->
+            <li class="nav-item dropdown language">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">eng</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">eng</a>
+                <a class="dropdown-item" href="#">fra</a>
+              </div>
+            </li>
+            <!-- Distance -->
+            <li class="nav-item distance">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </li>
+          </ul><!-- End Left Side of Navbar -->
+          <!-- Begin Right Side of Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Social Links -->
+            <li class="nav-item social-links">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-google-plus"></a>
+            </li>
+            <!-- Phone Link -->
+            <li class="nav-item phone-link">
+              <a href="#">+1 808 111 9999</a>
+            </li>
+            <!-- Sign In -->
+            <li class="nav-item dropdown sign-in">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">sign in</a>
+              <!-- Begin Dropdown Menu Popup -->
+              <div class="dropdown-menu form-login">
+                <!-- Log in Form -->
+                <div class="log-in">
+                  <div class="title">Login</div>
+                  <div class="input-group username">
+                    <div class="input-group-addon fa fa-user"></div>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="input-group password">
+                    <div class="input-group-addon fa fa-key"></div>
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="alert-message">Forgot password?</div>
+                  <button class="btn btn-large btn-red btn-login">Login</button>
+                </div>
+                <!-- Sign Up Form -->
+                <div class="sign-up">
+                  <div class="sentence">Don't have an account?</div>
+                  <div class="alert-message">Sign up now!</div>
+                  <button class="btn btn-large btn-signup">Sign up free</button>
+                </div>
+              </div><!-- End Dropdown Menu Popup -->
+            </li>
+          </ul><!-- End Left Side of Navbar -->
+        </div><!-- End Header Top Navbar Collapse -->
+      </div><!-- Container -->
+    </nav><!-- End Header Top -->
+    <div class="container">
+      <!-- Begin Header Menu -->
+      <nav class="navbar navbar-expand-lg header-menu">
+        <!-- Begin Navbar Header -->
+        <div class="navbar-header">
+          <!-- Site Brand -->
+          <a href="#" class="navbar-brand">
+            <img class="site-logo" src="img/icons/logo.png" alt="">
+            <div class="site-title">Listing Paradise</div>
+          </a>
+          <!-- Sub Menu -->
+          <div class="sub-menu">
+            <a class="fa fa-bars" href="#" data-toggle="dropdown"></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                <img src="img/icons/home.png" alt="">
+                Realestate
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="img/icons/plane.png" alt="">
+                Hotel & Travel
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="img/icons/restaurant.png" alt="">
+                Restaurant
+              </a>
+            </div>
+          </div>
+        </div><!-- End Navbar Header -->
+        <!-- NavBar Toggler Button -->
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarHeaderMenu">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!-- Begin Header Menu Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarHeaderMenu">
+          <!-- Begin Page Menu Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">Home</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Hotels</a>
+                <a href="#" class="dropdown-item">Travel</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Holiday Tour</a>
+                <a href="#" class="dropdown-item">Wedding Tour</a>
+                <a href="#" class="dropdown-item">Summer Tour</a>
+                <a href="#" class="dropdown-item">Iceland Tour</a>
+                <a href="#" class="dropdown-item">Forest Tour</a>
+                <a href="#" class="dropdown-item">Historical Places</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">Hotels</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Hotel 1</a>
+                <a href="#" class="dropdown-item">Hotel 2</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="nav-item search">
+              <a href="#" class="fa fa-search"></a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-large btn-red">Add Listing</button>
+            </li>
+          </ul><!-- End Page Menu Navbar -->
+        </div><!-- End Header Menu Navbar Collapse -->
+      </nav><!-- End Header Menu -->
+    </div><!-- /.container -->
+  </div><!-- End Page Header -->
+  <!-- Begin Main Slider -->
+  <div class="main-slider">
+    <!-- Begin Owl Carousel Slider -->
+    <div class="owl-carousel" id="mainSlider">
+      <!-- Begin Slider Item -->
+      <div class="slider-item">
+        <!-- Slider Image -->
+        <div class="slider-image">
+          <img src="img/slider/05.png" alt="">
+        </div>
+        <!-- Slider Content -->
+        <div class="slider-content">
+          <div class="container">
+            <!-- Weather -->
+            <div class="weather wow fadeIn">
+              <div class="weather-icon">
+                <img src="img/icons/cloudy.png" alt="">
+              </div>
+              <div class="weather-info">
+                <div class="weather-location">Caribbean</div>
+                <div class="weather-value">32.5 ° C</div>
+              </div>
+            </div>
+            <!-- Title -->
+            <div class="title-script wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">Hotel and Travel</div>
+            <div class="title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">Caribbean</div>
+            <div class="title-description wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">Start @ $200, 2 days 3 nights</div>
+            <!-- button -->
+            <button class="btn btn-default btn-large wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1200ms">Explore Now</button>
+          </div>
+        </div>
+      </div><!-- End Slider Item -->
+      <!-- Begin Slider Item -->
+      <div class="slider-item">
+        <!-- Slider Image -->
+        <div class="slider-image">
+          <img src="img/slider/06.png" alt="">
+        </div>
+        <!-- Slider Content -->
+        <div class="slider-content">
+          <div class="container">
+            <!-- Weather -->
+            <div class="weather wow fadeIn">
+              <div class="weather-icon">
+                <img src="img/icons/cloudy.png" alt="">
+              </div>
+              <div class="weather-info">
+                <div class="weather-location">Caribbean</div>
+                <div class="weather-value">32.5 ° C</div>
+              </div>
+            </div>
+            <!-- Title -->
+            <div class="title-script wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">Hotel and Travel</div>
+            <div class="title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">Find Your Perfect Trip</div>
+            <div class="title-description wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">Start @ $200, 2 days 3 nights</div>
+            <!-- button -->
+            <button class="btn btn-default btn-large wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1200ms">Explore Now</button>
+          </div>
+        </div>
+      </div><!-- End Slider Item -->
+      <!-- Begin Slider Item -->
+      <div class="slider-item">
+        <!-- Slider Image -->
+        <div class="slider-image">
+          <img src="img/slider/04.png" alt="">
+        </div>
+        <!-- Slider Content -->
+        <div class="slider-content">
+          <div class="container">
+            <!-- Weather -->
+            <div class="weather wow fadeIn">
+              <div class="weather-icon">
+                <img src="img/icons/cloudy.png" alt="">
+              </div>
+              <div class="weather-info">
+                <div class="weather-location">Caribbean</div>
+                <div class="weather-value">32.5 ° C</div>
+              </div>
+            </div>
+            <!-- Title -->
+            <div class="title-script wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">Hotel and Travel</div>
+            <div class="title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">Snorkeling</div>
+            <div class="title-description wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">Start @ $200, 2 days 3 nights</div>
+            <!-- button -->
+            <button class="btn btn-default btn-large wow fadeIn" data-wow-duration="1000ms" data-wow-delay="1200ms">Explore Now</button>
+          </div>
+        </div>
+      </div><!-- End Slider Item -->
+    </div><!-- End Owl Carousel Slider -->
+    <!-- Begin Slider Indicators -->
+    <div class="slider-indicators">
+      <div class="indicator">
+        <span class="indicator-number">1</span>
+        <span class="indicator-text">Caribbean</span>
+      </div>
+      <div class="indicator active">
+        <span class="indicator-number">2</span>
+        <span class="indicator-text">Perfect Trip</span>
+      </div>
+      <div class="indicator">
+        <span class="indicator-number">3</span>
+        <span class="indicator-text">Snorkeling</span>
+      </div>
+    </div><!-- End Slider Indicators -->
+    <!-- Begin Search Bar -->
+    <div class="search-bar wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+      <div class="container">
+        <!-- Begin Nav Tabs -->
+        <ul class="nav nav-tabs">
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#hotel" data-toggle="tab">Hotels</a>
+          </li>
+          <!-- Nav Item -->
+          <li class="nav-item">
+            <a class="nav-link" href="#travel" data-toggle="tab">Travel</a>
+          </li>
+        </ul><!-- End Nav Tabs -->
+        <!-- Begin Tab Content -->
+        <div class="tab-content">
+          <!-- Begin Hotel Tab Pane -->
+          <div class="tab-pane fade show active" id="hotel">
+            <div class="row">
+              <!-- Destination -->
+              <input type="text" class="form-control search-filter destination" placeholder="Destination, City....">
+              <!-- Location -->
+              <div class="search-filter location dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Select Location</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">eng</a>
+                </div>
+              </div>
+              <!-- Date Range Picker -->
+              <div class="search-filter date-range">
+                <span></span>
+              </div>
+              <!-- Price Range Picker -->
+              <div class="search-filter price-range">
+                <input class="price-range-input" type="text" value="" data-slider-min="200" data-slider-max="18000" data-slider-step="5" data-slider-value="[200,13000]"/>
+                <span>$200 - $18000</span>
+              </div>
+              <!-- Search Button -->
+              <button class="btn btn-red search-button ">
+                search
+              </button>
+            </div><!-- /.row -->
+          </div><!-- End Hotel Tab Pane -->
+          <!-- Begin Travel Tab Pane -->
+          <div class="tab-pane fade" id="travel">
+            <div class="row">
+              <!-- Destination -->
+              <input type="text" class="form-control search-filter destination" placeholder="Destination, City....">
+              <!-- Location -->
+              <div class="search-filter location dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Select Location</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">eng</a>
+                </div>
+              </div>
+              <!-- Date Range Picker -->
+              <div class="search-filter date-range">
+                <span></span>
+              </div>
+              <!-- Price Range Picker -->
+              <div class="search-filter price-range">
+                <input class="price-range-input" type="text" value="" data-slider-min="200" data-slider-max="18000" data-slider-step="5" data-slider-value="[200,13000]"/>
+                <span>$200 - $18000</span>
+              </div>
+              <!-- Search Button -->
+              <button class="btn btn-red search-button ">
+                search
+              </button>
+            </div><!-- /.row -->
+          </div><!-- End Travel Tab Pane -->
+        </div><!-- End Tab Content -->
+      </div><!-- /.container -->
+    </div><!-- End Search Bar -->
+  </div><!-- End Main Slider -->
+  <!-- Begin Featured Destinations -->
+  <div class="content-section featured-destinations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- Begin Section Side Header -->
+          <div class="section-side-header wow fadeIn" data-wow-duration="1000ms">
+            <!-- title -->
+            <div class="title">Featured Destinations</div>
+            <!-- text -->
+            <div class="text">
+              Explore a different way to travel. This isot as hop's version  of Lorem Ipsum. oin gra nibh vel velit auctor aliquet. nean sollicin, lorem quis.
+              <br><br>
+              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
+            </div><!-- /.text -->
+          </div><!-- End Section Side Header -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <a class="card featured-destination-card wow fadeIn" data-wow-duration="1000ms" href="">
+                <div class="card-image">
+                  <img src="img/destinations/01.png" alt="">
+                </div>
+                <div class="card-title">Paraiso, Cuba</div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <a class="card featured-destination-card" href="">
+                <div class="card-image">
+                  <img src="img/destinations/02.png" alt="">
+                </div>
+                <div class="promo-price">40% OFF</div>
+                <div class="card-title">Paraiso, Cuba</div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <a class="card featured-destination-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms" href="">
+                <div class="card-image">
+                  <img src="img/destinations/03.png" alt="">
+                </div>
+                <div class="card-title">Paraiso, Cuba</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- End Featured Destinations -->
+  <!-- Begin Top Tour Packages -->
+  <div class="content-section top-tour-packages">
+    <!-- Begin Section Header -->
+    <div class="section-header wow fadeIn" data-wow-duration="1000ms">
+      <!-- Title -->
+      <div class="title-script">Special Offers</div>
+      <div class="title">Top Tour Packages</div>
+      <div class="text">Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero Vestibulum imperdiet nibh vel magna lacinia commodo ultricies,</div>
+    </div><!-- End Section Header -->
+    <!-- Begin Top Tour Packages Slider -->
+    <div class="owl-carousel top-tour-packages-slider">
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/01.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/02.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/03.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/04.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/01.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+      <!-- Begin Tour Package -->
+      <div class="card tour-package-card wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <!-- Card Image -->
+        <div class="card-image">
+          <img src="img/tours/02.png" alt="">
+        </div><!-- /.card-image -->
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Card Title -->
+          <a class="card-title" href="">Playa Paraiso, Cuba</a>
+          <!-- Weather -->
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="img/icons/weather.png" alt="">
+            </div>
+            <div class="temperature">32.5 ° C</div>
+          </div>
+          <!-- Price -->
+          <div class="price">$200</div>
+          <!-- Rating and Review -->
+          <div class="rating-review">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <div class="review">1+ Review</div>
+          </div>
+          <!-- Card Text -->
+          <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+          <!-- Offer -->
+          <div class="offer">2 days 3 nights</div>
+        </div><!-- End Card Body -->
+        <!-- Card Footer -->
+        <div class="card-footer">
+          <!-- Location -->
+          <div class="location">Republic of Cuba</div>
+          <!-- Button -->
+          <button class="btn btn-default btn-small">discover</button>
+        </div><!-- /.card-footer -->
+      </div><!-- End Tour Package -->
+    </div><!-- End Top Tour Packages Slider -->
+    <!-- Begin Button Links -->
+    <div class="btn-links">
+      <button class="btn btn-large btn-prev"></button>
+      <button class="btn btn-large btn-red btn-checkall">CHECK ALL Offers</button>
+      <button class="btn btn-large btn-next"></button>
+    </div><!-- End Button Links -->
+  </div><!-- End Top Tour Packages -->
+  <!-- Begin Why Choose Us -->
+  <div class="content-section why-choose-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-side-header wow fadeIn" data-wow-duration="1000ms">
+            <div class="title-script">Best Travel Booking Online</div>
+            <div class="title">Why Choose Us ?</div>
+            <div class="text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, rem a quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Dssed odio sit amet nibh vulputate cursus a sit amt mauris. Morbi accumsan ipsum velit.
+            <br><br>
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida n vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum tor. This is Photoshop's version  of Lorem Ipsum.</div>
+            <button class="btn btn-default btn-large">Read More</button>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="top-reviews-header">
+            <div class="title">Top Reviews</div>
+            <div class="btn-links">
+              <button class="btn btn-small btn-prev"></button>
+              <button class="btn btn-small btn-next"></button>
+            </div>
+          </div>
+          <div class="owl-carousel top-reviews-slider">
+            <div class="slider-item">
+              <div class="card top-review-card">
+                <div class="location-rating">
+                  <div class="location">Republic of Cuba</div>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <div class="card-text">“ Nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi san ipsum velit. Nam nec tellus a odio tincidunt auctor  ornare odio. ”</div>
+                <div class="profile">
+                  <div class="profile-image">
+                    <img src="img/profile/01.png" alt="">
+                  </div>
+                  <div class="name">~ Akshay Handge ~ [ USA ]</div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card top-review-card">
+                <div class="location-rating">
+                  <div class="location">Republic of Cuba</div>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                </div>
+                <div class="card-text">“ Nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi san ipsum velit. Nam nec tellus a odio tincidunt auctor  ornare odio. ”</div>
+                <div class="profile">
+                  <div class="profile-image">
+                    <img src="img/profile/02.png" alt="">
+                  </div>
+                  <div class="name">~ Aditi Suryavanshi ~ [ USA ]</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- End Why Choose Us -->
+  <!-- Begin Services -->
+  <div class="content-section services">
+    <div class="background-image">
+      <img src="img/slider/07.png" alt="">
+    </div>
+    <div class="container text-center">
+      <div class="title-script wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">Live Tour</div>
+      <div class="title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">Take A Tour Watch Video</div>
+      <div class="video-play-button wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+        <div class="video-play-inner"></div>
+      </div>
+      <!-- Begin Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+              </div>
+            </div><!-- /.modal-body -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- Begin Service Items -->
+      <div class="service-items">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+              <img src="img/icons/guarantee.png" alt="" class="service-icon">
+              <div class="text">Best Price Guarantee</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+              <img src="img/icons/heart.png" alt="" class="service-icon">
+              <div class="text">Travellers Love us</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+              <img src="img/icons/agent.png" alt="" class="service-icon">
+              <div class="text">Best Travel Agent</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="service-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+              <img src="img/icons/support.png" alt="" class="service-icon">
+              <div class="text">24x7 Services & Support</div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Service Items -->
+    </div>
+  </div><!-- End Services -->
+  <!-- Begin Popular Hotels and Rooms -->
+  <div class="content-section popular-hotels-rooms">
+    <!-- Begin Section Header -->
+    <div class="section-header wow fadeIn" data-wow-duration="1000ms">
+      <div class="title-script">Hotels Deals & Discounts</div>
+      <div class="title">Popular Hotels & Rooms</div>
+      <div class="text">Morbi mollis vestibulum sollicitudin. Nunc in eros a justo facilisis rutrum. Aenean id ullamcorper libero Vestibulum imperdiet nibh vel magna lacinia commodo ultricies,</div>
+    </div><!-- End Section Header -->
+    <!-- Begin  Filter Tabs -->
+    <div class="filter-tabs wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+      <div class="tab selected" data-filter=".cuba">
+        <span class="location">Cuba</span>
+        <span class="number">[ 3 ]</span>
+      </div>
+      <div class="tab" data-filter=".india">
+        <span class="location">India</span>
+        <span class="number">[ 2 ]</span>
+      </div>
+      <div class="tab" data-filter=".switzerland">
+        <span class="location">Switzerland</span>
+        <span class="number">[ 2 ]</span>
+      </div>
+      <div class="tab" data-filter=".us">
+        <span class="location">US</span>
+        <span class="number">[ 3 ]</span>
+      </div>
+      <div class="tab" data-filter=".dubai">
+        <span class="location">Dubai</span>
+        <span class="number">[ 2 ]</span>
+      </div>
+    </div>
+    <!-- End Filter Tabs -->
+    <div class="container">
+      <!-- Begin Masonry Grid -->
+      <div class="masonry-grid">
+        <!-- Grid Item -->
+        <div class="grid-item india us wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/01.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+        <!-- Grid Item -->
+        <div class="grid-item cuba dubai wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/02.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+        <!-- Grid Item -->
+        <div class="grid-item cuba switzerland wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/03.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+        <!-- Grid Item -->
+        <div class="grid-item india us wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/04.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+        <!-- Grid Item -->
+        <div class="grid-item switzerland dubai wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/05.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+        <!-- Grid Item -->
+        <div class="grid-item cuba us wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+          <!-- Begin Hotel Package Card -->
+          <div class="card hotel-package-card">
+            <!-- Card Image -->
+            <div class="card-image">
+              <img src="img/hotels/06.png" alt="">
+            </div>
+            <!-- Price -->
+            <div class="price"><span>$50 / Night</span></div>
+            <!-- Begin Card Body -->
+            <div class="card-body">
+              <div class="card-title" href="">Name Of Hotel</div>
+              <!-- Rating and Review -->
+              <div class="rating-review">
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <div class="review">1+ Review</div>
+              </div>
+              <!-- Card Text -->
+              <div class="card-text">Morbi mollis vestibulum sollicitudin.<br>Nunc in eros a justo facilisis.</div>
+              <!-- Offer -->
+              <div class="booking-date">Latest booking : April 4, 2017</div>
+            </div><!-- End Card Body -->
+            <!-- Card Footer -->
+            <div class="card-footer">
+              <!-- Location -->
+              <div class="location">Republic of Cuba</div>
+              <!-- Button -->
+              <button class="btn btn-default btn-small">Book Now</button>
+            </div><!-- /.card-footer -->
+          </div><!-- End Hotel Package Card -->
+        </div><!-- /.grid-item -->
+      </div><!-- End Masonry Grid -->
+    </div><!-- /.container -->
+    <div class="btn-links wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+      <button class="btn btn-large btn-red btn-checkall" data-filter="*">CHECK ALL Hotels</button>
+    </div>
+  </div><!-- End Popular Hotels and Rooms -->
+  <!-- Begin Interesting News -->
+  <div class="content-section interesting-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- News Item -->
+          <div class="news-item wow fadeIn" data-wow-duration="1000ms">
+            <!-- News Image -->
+            <img src="img/news/01.png" alt="" class="news-image">
+            <!-- Info Box -->
+            <div class="info-box">
+              <div class="date">April 4, 2017</div>
+              <div class="title">Enchanted Caribean.</div>
+            </div><!-- /.info-box -->
+          </div><!-- End News Item -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <!-- Section Side Header -->
+          <div class="section-side-header wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+            <div class="title-script">Travel Articles</div>
+            <div class="title">Interesting News</div>
+            <div class="text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, rem a quis bibendum auctor, nisi elit consequat ipsum, nesags sem nibh id elit. Dssed odio sit amet nibh.</div>
+          </div><!-- /.section-side-header -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <!-- News Item -->
+          <div class="news-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+            <!-- News Image -->
+            <img src="img/news/02.png" alt="" class="news-image">
+            <!-- Info Box -->
+            <div class="info-box">
+              <div class="date">April 4, 2017</div>
+              <div class="title">Enchanted Caribean.</div>
+            </div><!-- /.info-box -->
+          </div><!-- End News Item -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-xl-3 col-md-6">
+          <!-- News Item -->
+          <div class="news-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <!-- News Image -->
+            <img src="img/news/03.png" alt="" class="news-image">
+            <!-- Info Box -->
+            <div class="info-box">
+              <div class="date">April 4, 2017</div>
+              <div class="title">Enchanted Caribean.</div>
+            </div><!-- /.info-box -->
+          </div><!-- End News Item -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-xl-3 col-md-6">
+          <!-- News Item -->
+          <div class="news-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <!-- News Image -->
+            <img src="img/news/04.png" alt="" class="news-image">
+            <!-- Info Box -->
+            <div class="info-box">
+              <div class="date">April 4, 2017</div>
+              <div class="title">Enchanted Caribean.</div>
+            </div><!-- /.info-box -->
+          </div><!-- End News Item -->
+        </div><!-- /.col-lg-3 -->
+        <div class="col-xl-3 col-md-6">
+          <!-- News Item -->
+          <div class="news-item wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <!-- News Image -->
+            <img src="img/news/05.png" alt="" class="news-image">
+            <!-- Info Box -->
+            <div class="info-box">
+              <div class="date">April 4, 2017</div>
+              <div class="title">Enchanted Caribean.</div>
+            </div><!-- /.info-box -->
+          </div><!-- End News Item -->
+        </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- End Interesting News -->
+  <!-- Begin Partners -->
+  <div class="content-section partners">
+    <div class="container">
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay=""><img src="img/partners/01.png" alt=""></a>
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="200ms"><img src="img/partners/02.png" alt=""></a>
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"><img src="img/partners/03.png" alt=""></a>
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms"><img src="img/partners/04.png" alt=""></a>
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms"><img src="img/partners/05.png" alt=""></a>
+      <a href="" class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms"><img src="img/partners/06.png" alt=""></a>
+    </div>
+  </div><!-- End Partners -->
+  <!-- Begin Newsletter -->
+  <div class="content-section newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="">
+          <img src="img/icons/subscribe.png" alt="">
+          <div class="title">Subscribe to Our List</div>
+        </div>
+        <div class="col-xl-8">
+          <div class="input-group wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <input class="form-control fa" type="text" placeholder="&#xf003; Type your Email Address">
+            <button class="btn btn-default">
+              <i class="fa fa-paper-plane"></i>
+              Subricribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Newsletter -->
+  <!-- Begin Page Footer -->
+  <div class="page-footer">
+    <div class="container">
+      <!-- Begin Logo and Links -->
+      <div class="footer-block logo-links">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <a class="logo-link" href="">
+              <img class="site-logo" src="img/icons/logo-2.png" alt="">
+              <div class="site-title">Listing Paradise</div>
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <a class="link-item" href="">
+                  <img src="img/icons/home.png" alt="" class="link-icon">
+                  Get Appointment
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <a class="link-item" href="">
+                  <img src="img/icons/phone1.png" alt="" class="link-icon">
+                  Contact our Office
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <a class="link-item" href="">
+                  <img src="img/icons/clock.png" alt="" class="link-icon">
+                  Latest News
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Logo and Links -->
+      <div class="footer-block widget-group">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="widget about-listing">
+              <div class="title">About Listing</div>
+              <div class="text">Travelers are always discoverers, esy those who travel by air. There are no signposts in the sky.</div>
+              <a class="link-item" href="">
+                <i class="fa fa-plane"></i>
+                Hotel and Tervle Listing
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-spoon"></i>
+                Restaurant Listing
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-home"></i>
+                Realestate Listing
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="widget">
+              <div class="title">Information</div>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                About
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Service
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Terms and Conditions
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Become a partner
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Best Price Guarantee
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Privacy & Cookies Policy
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="widget">
+              <div class="title">Customer Support</div>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                FAQ
+              </a>
+               <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Payment Option
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Booking Tips
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                How it words ?
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-long-arrow-right"></i>
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="widget question">
+              <div class="title">Have Questions?</div>
+              <a class="link-item" href="">
+                <i class="fa fa-phone"></i>
+                <div class="detail">
+                  <div class="text">Toll Free caling in world</div>
+                  <div class="link">808 - 111 - 9999</div>
+                </div>
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-envelope-o"></i>
+                <div class="detail">
+                  <div class="text">Email Us</div>
+                  <div class="link">listing@example.com</div>
+                </div>
+              </a>
+              <a class="link-item" href="">
+                <i class="fa fa-map-marker"></i>
+                <div class="detail">
+                  <div class="text">View On Map</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-block copy-right">
+        <div class="text">© 2017-18 Listing Paradise | All Rights Reserved. Design by Webstrot</div>
+        <div class="social-links">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-google-plus"></a>
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </div><!-- End Page Footer -->
+  <a href="javascript:" id="return_to_top"><i class="fa fa-angle-up"></i></a>
+  <!-- Javascript file links -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/bootstrap-slider.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/functions.js"></script>
+</body>
+</html>

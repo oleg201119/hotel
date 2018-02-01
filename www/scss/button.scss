@@ -1,0 +1,58 @@
+button {
+  font-family: $font_bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn {
+  border-radius: $size_border_radius;
+  border: $border;
+}
+.btn-default {
+  background-color: $color_white;
+  color: $color_black;
+  &:hover {
+    background-color: $color_red;
+    color: $color_white;
+    border-color: $color_red;
+  }
+}
+.btn-red {
+  background-color: $color_red;
+  color: $color_white;
+  &:hover {
+    background-color: lighten($color_red, 5%);
+  }
+}
+.btn-large {
+  height: 50px;
+  width: 170px;
+  &.btn-prev, &.btn-next {
+    width: 85px;
+  }
+}
+.btn-small {
+  height: 40px;
+  font-size: $size_font_small;
+  &.btn-prev, &.btn-next {
+    width: 70px;
+  }
+}
+.btn-prev {
+  background: url('../img/icons/arrow-left-black.png') no-repeat center;
+  &:hover {
+    background-image: url('../img/icons/arrow-left-white.png');
+    background-color: $color_red;
+    border-color: $color_red;
+  }
+}
+.btn-next {
+  background: url('../img/icons/arrow-right-black.png') no-repeat center;
+  &:hover{
+    background-image: url('../img/icons/arrow-right-white.png');
+    background-color: $color_red;
+    border-color: $color_red;
+  }
+}
+.btn-checkall {
+  width: 230px;
+}

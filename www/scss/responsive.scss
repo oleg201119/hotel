@@ -1,0 +1,100 @@
+
+@media (max-width: 1200px) {
+  .page-header .header-menu .nav-item {
+    margin-right: 20px;
+  }
+  .main-slider .search-bar .tab-content {
+    .destination, .location, .date-range, .price-range {
+      width: 50%;
+    }
+    .search-button {
+      width: 100%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: $size_border_radius;
+    }
+  }
+  // Newsletter
+  .newsletter .row > div:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-header .header-top #navbarHeaderTop .dropdown-menu.show,
+  .page-header .header-menu #navbarHeaderMenu .dropdown-menu.show {
+    position: relative;
+    &:before {
+      left: 0;
+      right: unset;
+    }
+  }
+  .page-header .header-menu .dropdown-menu.show {
+    margin-top: 10px;
+  }
+  .page-header .header-top {
+    // Header Top Phone Link
+    .phone-link {
+      margin-top: 0; margin-bottom: 0;
+      padding-top: 0; padding-bottom: 0;
+      padding: 0 10px;
+    }
+  }
+  // Section Side Header
+  .featured-destinations .section-side-header {
+    margin-bottom: 50px;
+  }
+  // Popular Hotels and Rooms Masonry Grid
+  .popular-hotels-rooms .masonry-grid .grid-item {
+    width: 50%;
+  }
+  // 
+  .page-footer .widget-group .widget {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .main-slider .search-bar .tab-content {
+    .destination, .location, .date-range, .price-range {
+      width: 100%;
+    }
+  }
+  .main-slider .search-bar {
+    top: 750px;
+  }
+  // Featured Destiantion Card
+  .featured-destination-card {
+    margin-bottom: 20px;
+  }
+  // Popular Hotels and Rooms Masonry Grid
+  .popular-hotels-rooms .masonry-grid .grid-item {
+    width: 100%;
+  }
+  .page-footer .logo-link, .page-footer .link-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .newsletter .input-group {
+    display: block;
+    input[type='text'] {
+      border-top-right-radius: $size_border_radius;
+      border-bottom-right-radius: $size_border_radius;
+    }
+    button {
+      border-left: 1px solid rgba($color_white, 0.5);
+      border-top-left-radius: $size_border_radius;
+      border-bottom-left-radius: $size_border_radius;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  // Section Side Header
+  .featured-destinations .section-side-header {
+    max-width: 327px;
+  }
+  .why-choose-us .section-side-header {
+    max-width: 510px;
+  }
+}

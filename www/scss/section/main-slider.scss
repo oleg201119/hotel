@@ -1,0 +1,258 @@
+
+.main-slider {
+  position: relative;
+  /////////////////
+  // Slider Item //
+  /////////////////
+  .slider-item {
+    // Slider Image
+    .slider-image {
+      height: 1080px;
+      display: flex;
+      justify-content: center;
+      img {
+        object-fit: cover;
+      }
+    }
+    // Slider Content
+    .slider-content {
+      position: absolute;
+      top: 340px;
+      left: 0; right: 0;
+    }
+    // Weather
+    .weather {
+      color: $color_white;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      .weather-icon {
+        display: flex;
+        align-items: center;
+        img {
+          width: unset;
+        }
+        &:after {
+          content: '';
+          width: 1px;
+          height: 50px;
+          background-color: $color_white;
+          opacity: .6;
+          margin: 0 15px;
+        }
+      }
+      .weather-location {
+        font-size: $size_font_small;
+        opacity: .6;
+      }
+      .weather-value {
+        font-size: 24px;
+      }
+    } // End Weather
+    // Title
+    .title-script {
+      color: $color_red;
+      font-family: $font_script;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .title {
+      color: $color_black;
+      font-family: $font_title_bold;
+      font-size: 56px;
+    }
+    .title-description {
+      color: $color_white;
+      font-family: $font_title;
+      margin-bottom: 25px;
+      font-size: 30px;
+    } // End Title
+  } // End Slider Item
+  ///////////////////////
+  // Slider Indicators //
+  ///////////////////////
+  .slider-indicators {
+    position: absolute;
+    top: 560px;
+    right: 0;
+    z-index: 1;
+    .indicator {
+      line-height: 50px;
+      background-color: rgba(0, 0, 0, .3);
+      color: $color_white;
+      cursor: pointer;
+      margin-bottom: 2px;
+      min-width: 230px;
+      padding-left: 20px;
+      &.active {
+        background-color: $color_red;
+        color: $color_white;
+        margin-left: -30px;
+        padding-left: 50px;
+        .indicator-number:after {
+          background-color: $color_white;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .indicator-number {
+        display: inline-flex;
+        align-items: center;
+        &:after {
+          content: '';
+          width: 25px;
+          height: 1px;
+          background-color: $color_red;
+          margin: 0 12px;
+        }
+      }
+    }
+  } // End Slider Indicators
+  ////////////////
+  // Search Bar //
+  ////////////////
+  .search-bar {
+    position: absolute;
+    top: 870px;
+    left: 0; right: 0;
+    z-index: 1;
+    .nav-tabs {
+      border-bottom: unset;
+      .nav-item {
+        margin-bottom: unset;
+      }
+    }
+    // Tab Nav Link
+    .nav-link {
+      width: 150px;
+      height: 50px;
+      padding: 10px;
+      line-height: 30px;
+      text-align: center;
+      font-family: $font_bold;
+      border: unset;
+      background-color: rgba(0, 0, 0, .3);
+      color: $color_white;
+      text-transform: uppercase;
+      border-top-right-radius: unset;
+      border-top-left-radius: unset;
+      &.active {
+        background-color: $color_red;
+        &:before {
+          color: $color_white;
+        }
+      }
+      &:before {
+        font-family: $font_awesome;
+        margin-right: 10px;
+        color: $color_red;
+      }
+    }
+    .nav-item:first-child .nav-link {
+      border-top-left-radius: $size_border_radius;
+      border-top-right-radius: unset;
+      &:before {
+        content: '\f1ad';
+      }
+    }
+    .nav-item:last-child .nav-link {
+      border-top-left-radius: unset;
+      border-top-right-radius: $size_border_radius;
+      &:before {
+        content: '\f024';
+      }
+    } // End Tab Nav Link
+    // Tab Content
+    .tab-content {
+      background-color: $color_white;
+      border-bottom-left-radius: $size_border_radius;
+      border-top-right-radius: $size_border_radius;
+      border-bottom-right-radius: $size_border_radius;
+    }
+    .tab-pane {
+      margin-right: -1px;
+      .row {
+        margin: 0;
+      }
+      // Search Filter Item
+      .search-filter {
+        line-height: 40px;
+        padding: 10px 20px;
+        border-right: $border;
+        &:last-child {
+          border-right: unset;
+        }
+      }
+      // Destination
+      .destination {
+        border: unset;
+        box-shadow: unset;
+        border-right: $border;
+        width: 19%;
+        font-style: italic;
+      }
+      // Location
+      .location {
+        width: 20%;
+        vertical-align: bottom;
+        .dropdown-toggle:before {
+          content: '';
+          background: url('../img/icons/location.png') no-repeat center;
+          width: 18px;
+          height: 18px;
+          margin-right: 5px;
+        }
+        .dropdown-toggle:after {
+          margin-left: auto;
+        }
+      }
+      // Date Range
+      .date-range {
+        width: 24%;
+        cursor: pointer;
+        &:before {
+          content: '';
+          background: url('../img/icons/calendar.png') no-repeat center;
+          min-width: 20px; min-height: 20px;
+          margin-right: 5px;
+          display: inline-block;
+          position: relative;
+          top: 4px;
+        }
+      }
+      // Price Range
+      .price-range {
+        width: 25%;
+        .slider-horizontal {
+          width: 110px;
+          margin-right: 10px;
+          .slider-handle {
+            background-image: unset;
+            background-color: $color_black;
+            top: 2px;
+            width: 15px;
+            height: 15px;
+            margin-left: -5px;
+          }
+          .slider-track {
+            height: 8px;
+            top: 5px;
+            margin-top: unset;
+          }
+          .slider-selection {
+            background-image: unset;
+            background-color: $color_red;
+          }
+        }
+      }
+      // Search Button
+      .search-button {
+        width: 12%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+    }
+  }
+}

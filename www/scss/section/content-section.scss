@@ -1,0 +1,459 @@
+
+/////////////////////////
+// Section Side Header //
+/////////////////////////
+.section-side-header {
+  padding: 0 20px;
+  // Title Script
+  .title-script {
+    font-family: $font_script;
+    font-size: 20px;
+    color: $color_red;
+    margin-bottom: 5px;
+  }
+  // Title
+  .title {
+    font-family: $font_title;
+    font-size: 40px;
+    color: $color_black;
+    line-height: 1.2;
+    position: relative;
+    margin-bottom: 25px;
+    word-wrap: break-word;
+    &:before {
+      content: '';
+      width: 5px;
+      height: 30px;
+      background-color: $color_red;
+      position: absolute;
+      top: 6px;
+      left: -20px;
+    }
+  } // End Title
+  .text {
+    margin-bottom: 30px;
+  }
+} // End Section Side Header
+
+////////////////////
+// Section Header //
+////////////////////
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  .title-script {
+    font-family: $font_script;
+    font-size: 20px;
+    color: $color_red;
+    margin-bottom: 10px;
+  }
+  .title {
+    font-family: $font_title;
+    font-size: 40px;
+    color: $color_black;
+    &:after {
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: $color_red;
+      display: block;
+      margin: 2.5px auto 25px;
+    }
+  }
+  .text {
+    max-width: 715px;
+    margin: auto;
+  }
+}
+
+///////////////////////////////
+// Top Tour Packages Section //
+///////////////////////////////
+.top-tour-packages {
+  background-color: $color_section_background;
+  .top-tour-packages-slider {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    // Owl Item
+    .owl-item {
+      padding: 3px;
+    }
+  }
+  .btn-links {
+    text-align: center;
+    .btn-checkall {
+      margin: 0 20px;
+    }
+  }
+}
+
+///////////////////////////
+// Why Choose Us Section //
+///////////////////////////
+.why-choose-us {
+  .top-reviews-header {
+    padding: 30px 20px;
+    border-bottom: $border;
+    box-shadow: $box_shadow;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    // Card Title
+    .title {
+      font-family: $font_title;
+      font-size: 24px;
+      color: $color_black;
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: '';
+        width: 5px;
+        height: 29px;
+        background-color: $color_red;
+        position: absolute;
+        top: 3px;
+        left: -20px;
+      }
+    } // End Card Title
+    // Button Links
+    .btn-links {
+      margin-left: auto;
+    } // End Button Links
+  } // End First Card Block
+  .owl-item {
+    padding: 0 5px 5px;
+  }
+  .top-review-card {
+    padding: 30px;
+    overflow: unset;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    .location-rating {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 25px;
+      .location {
+        margin-right: 20px;
+        color: unset;
+      }
+      .rating .fa-star {
+        color: $color_red;
+      }
+    }
+    .card-text {
+      font-family: 'LibreBaskerville-Italic';
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .profile {
+      display: flex;
+      margin-bottom: -25px;
+      // Profile Image
+      .profile-image {
+        width: 80px; height: 80px;
+        display: inline-flex;
+        justify-content: center;
+        border-radius: $size_border_radius;
+        overflow: hidden;
+        vertical-align: top;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      } // End Profile Image
+      // Name
+      .name {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    } // End Profile
+  }
+} // End Why Choose Us Section
+
+//////////////
+// Services //
+//////////////
+.services {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: unset;
+  // Background Image
+  .background-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    overflow: hidden; 
+    img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(.8);
+    }
+  } // End Background Image
+  // Section Header
+  .title-script {
+    font-family: $font_script;
+    font-size: 20px;
+    color: $color_red;
+    margin-bottom: 5px;
+  }
+  .title {
+    font-family: $font_title;
+    font-size: 40px;
+    color: $color_white;
+    margin-bottom: 15px;
+  }
+  .video-play-button {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 15px solid rgba($color_white, 0.3);
+    cursor: pointer;
+    margin-bottom: 100px;
+    .video-play-inner{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color_red, 0.9);
+      border-radius: 50%;
+      &:before {
+        content: '\f04b';
+        font-family: $font_awesome;
+        color: $color_white;
+        margin: auto;
+        font-size: 25px;
+        position: relative;
+        left: 2px;
+      }
+    }
+    &:hover .video-play-inner {
+      filter: brightness(1.2);
+    }
+  }
+  .modal-dialog {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    max-width: 100%;
+  }
+  // Service Item
+  .service-item {
+    background-color: $color_white;
+    box-shadow: $box_shadow;
+    cursor: pointer;
+    min-height: 190px;
+    padding: 40px 0;
+    // Service Icon
+    .service-icon {
+      margin-bottom: 10px;
+    }
+    // Service Content Text
+    .text {
+      font-family: 'Lato-Bold';
+      font-size: 20px;
+      color: $color_black;
+      max-width: 130px;
+      margin: auto;
+    }
+    // When Hover
+    &:hover {
+      background-color: $color_red;
+      .service-icon {
+        filter: brightness(0) invert(1);
+      }
+      .text {
+        color: $color_white;
+      }
+    }
+  } // End Service Item
+} // End Services
+
+//////////////////////////////
+// Popular Hotels and Rooms //
+//////////////////////////////
+.popular-hotels-rooms {
+  // Filter Tabs
+  .filter-tabs {
+    text-align: center;
+    margin-bottom: 50px;
+    // Tab
+    .tab {
+      display: inline-block;
+      font-family: $font_title;
+      cursor: pointer;
+      padding: 8px 25px;
+      margin: 0 10px;
+      border-radius: 5px;
+      &:hover, &.selected {
+        background-color: $color_red;
+        span {
+          color: $color_white;
+        }
+      }
+      .location {
+        color: $color_black;
+      }
+      .number {
+        color: $color_blue;
+      }
+    } // End Tab
+  } // End Filter Tabs
+  // Masonry Grid
+  .masonry-grid {
+    margin: 0 -15px 50px;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .grid-item {
+      width: 33.33%;
+      padding: 15px;
+    }
+  } // End Masonry Grid
+  .btn-links {
+    text-align: center;
+  }
+}
+
+//////////////////////
+// Interesting News //
+//////////////////////
+.interesting-news {
+  background-color: $color_section_background;
+  .container {
+    margin-bottom: -30px;
+  }
+  // Section Side Header
+  .section-side-header {
+    box-shadow: $box_shadow;
+    background-color: $color_white;
+    min-height: 300px;
+    padding: 60px 30px 30px;
+    margin-bottom: 30px;
+    .title:before {
+      left: -30px;
+    }
+    .text {
+      margin-bottom: unset;
+      max-width: 460px;
+    }
+  }
+  .news-item {
+    box-shadow: $box_shadow;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .news-image {
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+      border-radius: $size_border_radius;
+    }
+    .info-box {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      color: $color_white;
+      padding: 20px 25px;
+      display: none;
+      .date {
+        font-size: $size_font_small;
+        margin-bottom: 15px;
+        &:before {
+          content: '\f133';
+          font-family: $font_awesome;
+          margin-right: 10px;
+        }
+      }
+      .title {
+        font-family: 'Lato-Bold';
+        font-size: 18px;
+      }
+    }
+    &:hover .info-box {
+      display: block;
+    }
+  }
+}
+//////////////
+// Partners //
+//////////////
+.partners {
+  justify-content: space-around;
+  padding: 80px 0;
+  a {
+    display: inline-flex;
+  }
+}
+
+////////////////
+// Newsletter //
+////////////////
+.newsletter {
+  padding: 80px 0;
+  background-color: $color_red;
+  img {
+    margin-right: 15px;
+  }
+  .title {
+    font-family: $font_title;
+    font-size: 24px;
+    color: $color_white;
+    display: inline-block;
+    vertical-align: middle;
+    &:before {
+      content: '';
+      width: 5px;
+      height: 30px;
+      background-color: $color_white;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 12px;
+    }
+  }
+  .input-group {
+    line-height: 50px;
+    input[type='text'] {
+      background-color: transparent;
+      width: inherit;
+      border: 1px solid rgba($color_white, 0.5);
+      border-top-left-radius: $size_border_radius;
+      border-bottom-left-radius: $size_border_radius;
+      color: rgba($color_white, 0.9);
+      padding: 15px 20px;
+      font-size: 20px;
+      &::-webkit-input-placeholder {
+        color: rgba($color_white, 0.5);
+        font-size: 16px;
+      }
+    }
+    input::-moz-placeholder {
+      color: rgba($color_white, 0.5);
+      font-size: 16px;
+    }
+    button {
+      padding-left: 25px;
+      padding-right: 25px;
+      border: 1px solid rgba($color_white, 0.5);
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}

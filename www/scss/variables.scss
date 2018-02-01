@@ -1,0 +1,72 @@
+
+//////////////////
+// Color Styles //
+//////////////////
+$color_black: #333333;
+$color_white: #ffffff;
+$color_red: #ef5b5b;
+$color_blue: #00b0ff;
+$color_text: #797979;
+$color_section_background: #f9f9f9;
+
+/////////////////
+// Font Styles //
+/////////////////
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Armata';
+  src: url('../fonts/Armata-Regular.ttf');
+}
+@font-face {
+  font-family: 'SegoeScript';
+  src: url('../fonts/SegoeScript-Regular.ttf');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.ttf');
+}
+@font-face {
+  font-family: 'LibreBaskerville-Italic';
+  src: url('../fonts/LibreBaskerville-Italic.ttf');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+$font_regular: 'OpenSans';
+$font_bold: 'OpenSans-Bold';
+$font_title: 'Poppins-SemiBold';
+$font_title_bold: 'Poppins-Bold';
+$font_script: 'SegoeScript';
+$font_awesome: 'FontAwesome';
+
+$size_font_regular: 16px;
+$size_font_small: 14px;
+$size_border_radius: 5px;
+
+$border: 1px solid rgba(0, 0, 0, .125);
+$box_shadow: 0px 1px 8px 1px rgba(0, 0, 0, .125);
