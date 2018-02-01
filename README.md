@@ -1,5 +1,5 @@
 # hotel
-responsive web page
+responsive hotel homepage
 
 ## homepage
 ![homepage screen](hotel.jpg?raw=true "Homepage")
